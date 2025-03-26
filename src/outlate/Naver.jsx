@@ -1,88 +1,389 @@
-import React from 'react';
+import React, { useState } from "react";
 import { LuSearch } from "react-icons/lu";
-import { useState } from "react";
 import { VscMenu, VscClose } from "react-icons/vsc";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { Link } from 'react-router-dom';
-
+import { FaHome, FaBlog, FaQuestionCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Naver() {
-
    const [open, setOpen] = useState(false);
+   const [faqOpen, setFaqOpen] = useState(false); // State for dropdown
+
    return (
       <>
-         
-         <div className="" >
-            <nav className="flex justify-between items-center p-4 container mx-auto">
-               <div className="text-3xl font-bold flex items-center gap-1">
-                  <img src="/logo.png" alt="Logo" />
-                  <h2 className="text-[32px] font-sans">IcyTales</h2>
+         <div className="container mx-auto">
+            <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 flex justify-between items-center p-4">
+               {/* Logo */}
+               <div className="text-3xl font-bold flex items-center gap-2">
+                  <img src="/logo.png" alt="Logo" className="w-10 h-10" />
+                  <h2 className="text-[24px] font-sans">IcyTales</h2>
                </div>
 
-               <div className="hidden md:flex gap-5">
-                  <Link to={"/"}>
-                     <a href="#" className="text-lg hover:text-primary font-family">Home</a>
-                  </Link>
-                  <a href="#" className="text-lg hover:text-primary font-family">About Us</a>
-                  <a href="#" className="text-lg hover:text-primary font-family">Blog</a>
-                  <a href="#" className="text-lg hover:text-primary font-family">Faq's</a>
-               </div>
+               {/* Desktop Menu */}
+               <div className="hidden md:flex gap-6">
+                  <Link to="/" className="text-lg hover:text-primary">Home</Link>
+                  <Link to="/data" className="text-lg hover:text-primary">About Us</Link>
+                  <Link to="/blog" className="text-lg hover:text-primary">Page</Link>
 
-               <div className="hidden md:block">
-                  <div className="flex items-center gap-8 relative">
-                     <LuSearch className="text-2xl" />
-                     <HiOutlineShoppingBag className="text-2xl" />
-
-                     <span className="absolute -top-1 right-[169px] w-[20px] h-[20px] flex items-center justify-center rounded-full bg-[#F83D8E]">4</span>
-
-                     <button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-4xl text-white">
-                        Contact Us <IoIosArrowRoundForward />
+                  {/* Faq's Dropdown */}
+                  <div className="relative">
+                     <button
+                        onClick={() => setFaqOpen(!faqOpen)}
+                        className="text-lg hover:text-primary focus:outline-none"
+                     >
+                        Faq's ▾
                      </button>
+                     {faqOpen && (
+                        <ul className="absolute left-0 mt-2 w-40 bg-white border rounded-lg shadow-md">
+                           <li>
+                              <Link
+                                 to="/pageabout"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 About
+                              </Link>
+                           </li>
+
+                           <li>
+                              <Link
+                                 to="/aboutTeam"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Team
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/review"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Review
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Shop 1
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Shop 2
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Shop 3
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Single Product 2
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Single Product 3
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Cart
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Checkout
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Special Offers
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 404
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Coming Soon
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Terms & Conditions
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Thank You
+                              </Link>
+                           </li>
+                        </ul>
+                     )}
                   </div>
                </div>
 
-               <button onClick={() => setOpen(true)} className="block md:hidden text-2xl">
+               {/* Right Icons */}
+               <div className="hidden md:flex items-center gap-6 relative">
+                  <LuSearch className="text-2xl cursor-pointer" />
+                  <div className="relative">
+                     <HiOutlineShoppingBag className="text-2xl cursor-pointer" />
+                     <span className="absolute -top-1 -right-2 w-[18px] h-[18px] flex items-center justify-center rounded-full bg-[#F83D8E] text-white text-xs">4</span>
+                  </div>
+
+                  <button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-full text-white">
+                     Contact Us <IoIosArrowRoundForward />
+                  </button>
+               </div>
+
+               {/* Mobile Menu Button */}
+               <button onClick={() => setOpen(true)} className="block md:hidden text-3xl">
                   <VscMenu />
                </button>
             </nav>
-         </div>
 
-         <div className={`fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transform ${open ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out shadow-lg`}>
-            <div className="p-4 flex justify-between items-center border-b border-gray-700">
-               <h2 className="text-xl font-bold">Sidebar Menu</h2>
-               <button onClick={() => setOpen(false)} className="text-xl">
-                  <VscClose />
-               </button>
+            {/* Sidebar for Mobile */}
+            <div className={`fixed top-0 left-0 h-full w-64 bg-gray-900 text-white transform ${open ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out shadow-lg z-50`}>
+               <div className="p-4 flex justify-between items-center border-b border-gray-700">
+                  <h2 className="text-xl font-bold">Menu</h2>
+                  <button onClick={() => setOpen(false)} className="text-2xl">
+                     <VscClose />
+                  </button>
+               </div>
+
+               {/* Sidebar Links */}
+               <ul className="mt-4 space-y-6 px-6">
+                  <Link to="/" className="flex items-center gap-3 text-lg hover:text-primary" onClick={() => setOpen(false)}>
+                     <FaHome /> Home
+                  </Link>
+                  <Link to="/data" className="flex items-center gap-3 text-lg hover:text-primary" onClick={() => setOpen(false)}>
+                     <IoIosArrowRoundForward /> About Us
+                  </Link>
+                  <Link to="/blog" className="flex items-center gap-3 text-lg hover:text-primary" onClick={() => setOpen(false)}>
+                     <FaBlog /> Blog
+                  </Link>
+
+                  {/* Faq's Dropdown in Mobile */}
+                  <div className="relative">
+                     <button
+                        onClick={() => setFaqOpen(!faqOpen)}
+                        className="flex items-center gap-3 text-lg hover:text-primary w-full"
+                     >
+                        <FaQuestionCircle /> Faq's
+                     </button>
+                     {faqOpen && (
+                        <ul className="absolute left-0 mt-2 w-40 bg-white border rounded-lg shadow-md">
+                           <li>
+                              <Link
+                                 to="/pageabout"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 About
+                              </Link>
+                           </li>
+
+                           <li>
+                              <Link
+                                 to="/aboutTeam"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Team
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/review"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Review
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Shop 1
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Shop 2
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Shop 3
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Single Product 2
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Single Product 3
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Cart
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Checkout
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Special Offers
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 404
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Coming Soon
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/faq1"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Terms & Conditions
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/faq2"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Thank You
+                              </Link>
+                           </li>
+                        </ul>
+                     )}
+                  </div>
+               </ul>
+
+               {/* Mobile Contact Section */}
+               <div className="flex flex-col items-center gap-6 mt-8">
+                  <LuSearch className="text-2xl cursor-pointer" />
+                  <div className="relative">
+                     <HiOutlineShoppingBag className="text-2xl cursor-pointer" />
+                     <span className="absolute -top-1 -right-2 w-[18px] h-[18px] flex items-center justify-center rounded-full bg-[#F83D8E] text-white text-xs">4</span>
+                  </div>
+
+                  <button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-full text-white">
+                     Contact Us <IoIosArrowRoundForward />
+                  </button>
+               </div>
             </div>
 
-            <ul className="mt-4 space-y-4 p-4 flex flex-col gap-5 items-center">
-               <a href="#" className="text-lg hover:text-primary font-family">Home</a>
-               <a href="#" className="text-lg hover:text-primary font-sans">About Us</a>
-               <a href="#" className="text-lg hover:text-primary font-sans">Blog</a>
-               <a href="#" className="text-lg hover:text-primary font-sans">Faq's</a>
-            </ul>
+            {/* Overlay */}
+            {open && <div onClick={() => setOpen(false)} className="fixed inset-0 bg-black opacity-50 md:hidden z-40"></div>}
 
-            <div className="flex flex-col items-center gap-8 relative">
-               <LuSearch className="text-2xl" />
-               <HiOutlineShoppingBag className="text-2xl" />
-
-               <span className="absolute -top-1 right-[169px] w-[20px] h-[20px] flex items-center justify-center rounded-full bg-[#F83D8E]">4</span>
-
-               <button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-4xl text-white">
-                  Contact Us <IoIosArrowRoundForward />
-               </button>
-            </div>
+            {/* Space for fixed nav */}
+            <div className="h-16 md:h-20"></div>
          </div>
-
-         {open && <div onClick={() => setOpen(false)} className="fixed inset-0 bg-black opacity-50 md:hidden"></div>}
-         
-
-         
       </>
    );
 }
 
 export default Naver;
-
-

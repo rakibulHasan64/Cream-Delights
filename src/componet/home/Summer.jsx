@@ -6,7 +6,7 @@ function Summer() {
          <div className="container mx-auto py-16 px-5">
             <div className="flex flex-col lg:flex-row items-center justify-around gap-10">
 
-               {/* Left Content */}
+               
                <div className="text-white space-y-6 text-center lg:text-left relative max-w-lg">
                   <h3 className="text-[48px] sm:text-[64px] lg:text-[112px] font-bold leading-tight">
                      Summer <br /> Special!
@@ -23,7 +23,7 @@ function Summer() {
                   <img className="absolute top-14 left-0 -translate-11 w-20 sm:w-28" src="/public/Figure → special-doted.png.png" alt="" />
                </div>
 
-               {/* Right Image Section */}
+               
                <div className="flex justify-center w-full lg:w-1/2 relative">
                   <img src="/Image (1).png" alt="Summer Offer" className="w-full max-w-sm lg:max-w-full object-contain" />
 

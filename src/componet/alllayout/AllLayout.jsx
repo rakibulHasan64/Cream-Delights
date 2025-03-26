@@ -1,3 +1,4 @@
+
 import Banner from "../home/Banner";
 import Cagtory from "../home/Cagtory";
 import Customar from "../home/Customar";
@@ -24,6 +25,7 @@ function AllLayout() {
          <SingUp />
 
          <FllowInta />
+      
          
       </>
    );

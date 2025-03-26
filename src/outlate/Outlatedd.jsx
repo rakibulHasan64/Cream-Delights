@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Naver from "./Naver";
+import Footer from "./Footer";
 
 
 function Outlate() {
@@ -9,6 +10,7 @@ function Outlate() {
          
          <Naver />
          <Outlet />
+         <Footer />
          
       </>
    );
