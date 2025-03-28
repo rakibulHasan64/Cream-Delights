@@ -83,7 +83,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/shopLayouttree3"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Shop 3
@@ -91,7 +91,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/productdetils"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Single Product 2
@@ -101,7 +101,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/productdetilstwo"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Single Product 3
@@ -109,7 +109,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/productdetilsthree"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Cart
@@ -177,10 +177,12 @@ function Naver() {
                {/* Right Icons */}
                <div className="hidden md:flex items-center gap-6 relative">
                   <LuSearch className="text-2xl cursor-pointer" />
-                  <div className="relative">
-                     <HiOutlineShoppingBag className="text-2xl cursor-pointer" />
-                     <span className="absolute -top-1 -right-2 w-[18px] h-[18px] flex items-center justify-center rounded-full bg-[#F83D8E] text-white text-xs">4</span>
-                  </div>
+                  <Link to={"/cart"}>
+                     <div className="relative">
+                        <HiOutlineShoppingBag className="text-2xl cursor-pointer" />
+                        <span className="absolute -top-1 -right-2 w-[18px] h-[18px] flex items-center justify-center rounded-full bg-[#F83D8E] text-white text-xs">4</span>
+                     </div>
+                  </Link>
 
                   <button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-full text-white">
                      Contact Us <IoIosArrowRoundForward />
@@ -271,7 +273,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/shopLayouttree3"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Shop 3
@@ -279,7 +281,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/productdetils"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Single Product 2
@@ -289,7 +291,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/productdetilstwo"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Single Product 3
@@ -297,7 +299,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/productdetilsthree"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Cart
@@ -365,10 +367,13 @@ function Naver() {
                {/* Mobile Contact Section */}
                <div className="flex flex-col items-center gap-6 mt-8">
                   <LuSearch className="text-2xl cursor-pointer" />
-                  <div className="relative">
-                     <HiOutlineShoppingBag className="text-2xl cursor-pointer" />
-                     <span className="absolute -top-1 -right-2 w-[18px] h-[18px] flex items-center justify-center rounded-full bg-[#F83D8E] text-white text-xs">4</span>
-                  </div>
+               
+                  <Link to={"/cart"}>
+                     <div className="relative">
+                        <HiOutlineShoppingBag className="text-2xl cursor-pointer" />
+                        <span className="absolute -top-1 -right-2 w-[18px] h-[18px] flex items-center justify-center rounded-full bg-[#F83D8E] text-white text-xs">4</span>
+                     </div>
+                  </Link>
 
                   <button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-full text-white">
                      Contact Us <IoIosArrowRoundForward />

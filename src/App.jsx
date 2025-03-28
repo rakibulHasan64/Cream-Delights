@@ -9,6 +9,13 @@ import Team from './componet/team/Team';
 import ReviewAll from './componet/review/ReviewAll';
 import ShopeLayoutAll from './Aboutus/ShopeLayoutAll';
 import ShopTwoAll from './Aboutus/ShopTwoAll';
+import ShopLayoutThree from './Aboutus/ShopLayoutThreeAll';
+import ShopLayoutThreeAll from './Aboutus/ShopLayoutThreeAll';
+import ProductDetls from './productditals/ProductDetls';
+import ProductDetils from './productditals/ProductDetils';
+import TwoDetilsAllLayout from './ProudetAllLayoutDetlisMain/ProductTwoDetils/TwoDetilsAllLayout';
+import ProductThreeAllLayout from './ProudetAllLayoutDetlisMain/ProductThreeDetalis/ProductThreeAllLayout';
+import ShopingCard from './componet/shoppingecard/ShopingCard';
 
 function App() {
   return (
@@ -24,11 +31,25 @@ function App() {
           <Route path='review' element={<ReviewAll />} />  
           <Route path='shopLayoit' element={<ShopeLayoutAll />} />  
           <Route path='shopLayout2' element={<ShopTwoAll />} />  
+          <Route path='shopLayouttree3' element={<ShopLayoutThreeAll />} />  
+
+          {/* product detalis */}
+          <Route path='productdetils' element={<ProductDetils />} />  
+          
+          {/* product detalis two */}
+          <Route path='productdetilstwo' element={<TwoDetilsAllLayout />} />  
+
+          {/* product detalis two */}
+          <Route path='productdetilsthree' element={<ProductThreeAllLayout />} />   
+
+             {/* shoppinge card */}
+          <Route path='cart' element={<ShopingCard />} />  
+          
         </Route>
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </div>
   );
-}
+} 
 
 export default App;
