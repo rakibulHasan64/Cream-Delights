@@ -7,6 +7,8 @@ import ErrorPage from './outlate/ErrorPage';
 import AllAboutUs from './Aboutus/AllAboutUs';
 import Team from './componet/team/Team';
 import ReviewAll from './componet/review/ReviewAll';
+import ShopeLayoutAll from './Aboutus/ShopeLayoutAll';
+import ShopTwoAll from './Aboutus/ShopTwoAll';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path='pageabout' element={<AllAboutUs />} />
           <Route path='aboutTeam' element={<Team />} /> 
           <Route path='review' element={<ReviewAll />} />  
+          <Route path='shopLayoit' element={<ShopeLayoutAll />} />  
+          <Route path='shopLayout2' element={<ShopTwoAll />} />  
         </Route>
         <Route path='*' element={<ErrorPage />} />
       </Routes>

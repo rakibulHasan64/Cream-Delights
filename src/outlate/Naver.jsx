@@ -65,7 +65,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/shopLayoit"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Shop 1
@@ -73,7 +73,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/shopLayout2"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Shop 2
@@ -253,7 +253,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/shopLayoit"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Shop 1
@@ -261,7 +261,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/shopLayout2"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Shop 2
