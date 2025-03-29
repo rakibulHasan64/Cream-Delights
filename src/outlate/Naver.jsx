@@ -17,7 +17,7 @@ function Naver() {
                {/* Logo */}
                <div className="text-3xl font-bold flex items-center gap-2">
                   <img src="/logo.png" alt="Logo" className="w-10 h-10" />
-                  <h2 className="text-[24px] font-sans">IcyTales</h2>
+                  <h3 className="text-[32px] font-family"><span className="text-primary">Icy</span>Tales</h3>
                </div>
 
                {/* Desktop Menu */}
@@ -119,7 +119,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/ChakeOut"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Checkout
@@ -127,7 +127,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/SpacileOffer"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Special Offers
@@ -137,7 +137,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/errorpage"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  404
@@ -145,7 +145,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/ComingSoon"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Coming Soon
@@ -155,7 +155,15 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/privcey"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                   Privacy Policy
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to="/terms"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Terms & Conditions
@@ -163,7 +171,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/Thank"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Thank You
@@ -309,7 +317,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/ChakeOut"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Checkout
@@ -317,7 +325,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/SpacileOffer"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Special Offers
@@ -327,7 +335,7 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/errorpage"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  404
@@ -335,7 +343,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/ComingSoon"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Coming Soon
@@ -345,7 +353,17 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to="/faq1"
+                                 to="/privcey"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Privacy Policy
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to="/terms"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Terms & Conditions
@@ -353,7 +371,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to="/faq2"
+                                 to="/Thank"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Thank You

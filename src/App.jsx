@@ -16,6 +16,12 @@ import ProductDetils from './productditals/ProductDetils';
 import TwoDetilsAllLayout from './ProudetAllLayoutDetlisMain/ProductTwoDetils/TwoDetilsAllLayout';
 import ProductThreeAllLayout from './ProudetAllLayoutDetlisMain/ProductThreeDetalis/ProductThreeAllLayout';
 import ShopingCard from './componet/shoppingecard/ShopingCard';
+import ChakeoutAll from './componet/chakeout/ChakeoutAll';
+import SpecialOferAll from './spaeciloffers/SpecialOferAll';
+import CommingeSoon from './outlate/CommingeSoon';
+import Privcey from './componet/privecyteam/Privcey';
+import Terms from './componet/privecyteam/Terms';
+import Tanks from './componet/privecyteam/Tanks';
 
 function App() {
   return (
@@ -40,7 +46,31 @@ function App() {
           <Route path='productdetilstwo' element={<TwoDetilsAllLayout />} />  
 
           {/* product detalis two */}
-          <Route path='productdetilsthree' element={<ProductThreeAllLayout />} />   
+          <Route path='productdetilsthree' element={<ProductThreeAllLayout />} />  
+
+          
+            {/* Chake out */}
+          <Route path='ChakeOut' element={<ChakeoutAll />} />  
+
+
+          {/* Spacile Offer */}
+          <Route path='SpacileOffer' element={<SpecialOferAll />} />  
+
+          {/* Error Page */}
+          <Route path='errorpage' element={<ErrorPage />} /> 
+
+
+          {/* Comminge soon */}
+          <Route path='ComingSoon' element={<CommingeSoon />} /> 
+          
+          {/* privcey */}
+          <Route path='privcey' element={<Privcey />} />
+
+          {/* terms */}
+          <Route path='terms' element={<Terms />} />  
+
+          {/* {Thank } */}
+          <Route path='Thank' element={<Tanks />} />  
 
              {/* shoppinge card */}
           <Route path='cart' element={<ShopingCard />} />  
