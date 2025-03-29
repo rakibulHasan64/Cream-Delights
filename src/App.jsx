@@ -22,6 +22,7 @@ import CommingeSoon from './outlate/CommingeSoon';
 import Privcey from './componet/privecyteam/Privcey';
 import Terms from './componet/privecyteam/Terms';
 import Tanks from './componet/privecyteam/Tanks';
+import AllBlog from './blog/AllBlog';
 
 function App() {
   return (
@@ -71,6 +72,15 @@ function App() {
 
           {/* {Thank } */}
           <Route path='Thank' element={<Tanks />} />  
+
+
+             {/* blog item all */}
+          <Route path='allblog' element={<AllBlog  />} />  
+
+
+
+
+
 
              {/* shoppinge card */}
           <Route path='cart' element={<ShopingCard />} />  

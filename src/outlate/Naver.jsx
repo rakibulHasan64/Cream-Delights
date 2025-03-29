@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 function Naver() {
    const [open, setOpen] = useState(false);
    const [faqOpen, setFaqOpen] = useState(false); // State for dropdown
+   const [blog, setBlog] = useState(false); 
 
    return (
       <>
@@ -35,7 +36,7 @@ function Naver() {
                         Faq's ▾
                      </button>
                      {faqOpen && (
-                        <ul className="absolute left-0 mt-2 w-40 bg-white border rounded-lg shadow-md">
+                        <ul className="absolute left-0 mt-2 w-40 bg-white border rounded-lg font-family shadow-md">
                            <li>
                               <Link
                                  to="/pageabout"
@@ -175,6 +176,104 @@ function Naver() {
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Thank You
+                              </Link>
+                           </li>
+                        </ul>
+                     )}
+                  </div>
+
+
+                      {/* blog dropdoune */}
+                  <div className="relative">
+                     <button
+                        onClick={() => setBlog(!blog)}
+                        className="text-lg hover:text-primary focus:outline-none"
+                     >
+                        blog ▾
+                     </button>
+                     {blog && (
+                        <ul className="absolute left-0 mt-2 w-40 bg-white border rounded-lg font-family shadow-md">
+                           <li>
+                              <Link
+                                 to="/allblog"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Blog
+                              </Link>
+                           </li>
+
+                           
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Single Blog
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Load More
+                              </Link>
+                           </li>
+
+
+
+
+
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 One Column
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Two Column
+                              </Link>
+                           </li>
+
+
+                           
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Three Column
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Four Column
+                              </Link>
+                           </li>
+
+
+
+
+                           <li>
+                              <Link
+                                 to="/Thank"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Six Column
                               </Link>
                            </li>
                         </ul>
@@ -375,6 +474,104 @@ function Naver() {
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Thank You
+                              </Link>
+                           </li>
+                        </ul>
+                     )}
+                  </div>
+
+
+
+                  <div className="relative">
+                     <button
+                        onClick={() => setBlog(!blog)}
+                        className="text-lg hover:text-primary focus:outline-none"
+                     >
+                        blog ▾
+                     </button>
+                     {blog && (
+                        <ul className="absolute left-0 mt-2 w-40 bg-white border rounded-lg font-family shadow-md">
+                           <li>
+                              <Link
+                                 to="/allblog"
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Blog
+                              </Link>
+                           </li>
+
+
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Single Blog
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Load More
+                              </Link>
+                           </li>
+
+
+
+
+
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 One Column
+                              </Link>
+                           </li>
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Two Column
+                              </Link>
+                           </li>
+
+
+
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Three Column
+                              </Link>
+                           </li>
+
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Four Column
+                              </Link>
+                           </li>
+
+
+
+
+                           <li>
+                              <Link
+                                 to=""
+                                 className="block px-4 py-2 text-gray-700 hover:bg-primary"
+                              >
+                                 Six Column
                               </Link>
                            </li>
                         </ul>
