@@ -214,7 +214,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to=""
+                                 to="/loadmore"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Load More
@@ -512,7 +512,7 @@ function Naver() {
                            </li>
                            <li>
                               <Link
-                                 to=""
+                                 to="/loadmore"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
                                  Load More

@@ -23,6 +23,7 @@ import Privcey from './componet/privecyteam/Privcey';
 import Terms from './componet/privecyteam/Terms';
 import Tanks from './componet/privecyteam/Tanks';
 import AllBlog from './blog/AllBlog';
+import LoadALL from './componet/loadmore/LoadALL.JSX';
 
 function App() {
   return (
@@ -75,7 +76,13 @@ function App() {
 
 
              {/* blog item all */}
-          <Route path='allblog' element={<AllBlog  />} />  
+          <Route path='allblog' element={<AllBlog />} /> 
+          
+
+          {/* blog load more data */}
+          
+          <Route path='loadmore' element={<LoadALL />} />  
+
 
 
 
