@@ -14,7 +14,7 @@ function LoadMore() {
          date: "Jan 15,2023"
       },
       {
-         img: "/public/vegan-image3.jpg.png",
+         img: "/vegan-image3.jpg.png",
          title: "How to Boost Your Business with SEO?",
          date: "Feb 10,2023"
       }

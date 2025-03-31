@@ -24,6 +24,8 @@ import Terms from './componet/privecyteam/Terms';
 import Tanks from './componet/privecyteam/Tanks';
 import AllBlog from './blog/AllBlog';
 import LoadALL from './componet/loadmore/LoadALL.JSX';
+import FrequtionAll from './componet/fqetion/FrequtionAll';
+import ContactAll from './componet/contact/ContactAll';
 
 function App() {
   return (
@@ -85,6 +87,20 @@ function App() {
 
 
 
+
+          {/* { Feqtion} */}
+
+          <Route path='Faqs' element={<FrequtionAll />} />  
+
+
+          {/* { Feqtion} */}
+
+          <Route path='Contact' element={<ContactAll />} />  
+
+
+
+
+    
 
 
 

@@ -228,10 +228,10 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to=""
+                                 to="/Faqs"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
-                                 One Column
+                                 Faq's
                               </Link>
                            </li>
                            <li>
@@ -291,9 +291,9 @@ function Naver() {
                      </div>
                   </Link>
 
-                  <button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-full text-white">
+                  <Link to={'/Contact'}><button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-full text-white">
                      Contact Us <IoIosArrowRoundForward />
-                  </button>
+                  </button></Link>
                </div>
 
                {/* Mobile Menu Button */}
@@ -526,10 +526,10 @@ function Naver() {
 
                            <li>
                               <Link
-                                 to=""
+                                 to="/Faqs"
                                  className="block px-4 py-2 text-gray-700 hover:bg-primary"
                               >
-                                 One Column
+                                 Faq's
                               </Link>
                            </li>
                            <li>
@@ -590,9 +590,9 @@ function Naver() {
                      </div>
                   </Link>
 
-                  <button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-full text-white">
+                  <Link to={'/Contact'}><button className="flex text-md items-center gap-3 px-4 py-2 bg-primary rounded-full text-white">
                      Contact Us <IoIosArrowRoundForward />
-                  </button>
+                  </button></Link>
                </div>
             </div>
 
